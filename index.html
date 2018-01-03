@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Chat application with multiple rooms and custom usernames, made with Socket.io and Material Design Lite">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>domoBot</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="ms-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#303f9f">
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="chat">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title" id="header-title">Lexi</span>
+                    <!-- <div class="mdl-layout-spacer"></div> -->
+                </div>
+            </header>
+            <main class="mdl-layout__content mdl-color--grey-50">
+                <div class="page-content">
+
+                    <section id="chatAreaSection" class="chat-area mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col" id="chat-cell">
+                            <div class="chat-list-div" id="chat-list">
+                                <ul class="listborder mdl-list" id="messagesList"></ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="message-area mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <div class="message-card mdl-card mdl-grid mdl-shadow--2dp">
+                                <div class="message-box mdl-cell mdl-cell--11-col">
+                                    <div id="send-message-form">
+                                        <div class="message-field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input id="send-message-form-input" class="mdl-textfield__input" autocomplete="off" type="text">
+                                            <label class="mdl-textfield__label" for="send-message-form-input">Type here...</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="send-button mdl-cell mdl-cell--1-col">
+                                    <button id="send-message-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.41.0.min.js"></script>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

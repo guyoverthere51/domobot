@@ -1,0 +1,102 @@
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#chat {
+    display: inline;
+}
+
+.navigation {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.dialog-card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    height: 200px;
+    margin: auto;
+}
+
+.send-button {
+    padding: 16px 0px;
+}
+
+.message-area {
+    position: fixed;
+    height: 15%;
+    width: 98.5%;
+    bottom: 5px;
+    padding: 10px;
+}
+
+.message-card {
+    width: inherit;
+    min-height: inherit;
+}
+
+.message-field {
+    width: 100%;
+    margin: auto;
+}
+
+.chat-area {
+    position: absolute;
+    padding:auto;
+    left : 0;
+    right : 0;
+    top:0;
+    bottom:0;
+}
+
+.chat-list-div {
+    padding: 0;
+    overflow: auto;
+    height: 85%;
+    width: 100%;
+}
+
+.listborder {
+    margin: 0;
+    padding: 0;
+}
+
+.mdl-card__title {
+    height:100px;
+}
+
+.mdl-card__actions {
+    display: flex;
+    justify-content: center;
+}
+
+#chat-list {
+    width:100%;
+}
+
+.chat-cell {
+    margin:auto;
+}
+
+.chatResponseCard {
+    width:70%;
+    margin:auto;
+}
+
+.chatResponseCardActionbutton {
+    margin:10px;
+}
+
+.mdl-list__item-text-body {
+    margin-top:5px;
+}
