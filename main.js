@@ -8,13 +8,6 @@
     const sendMessageForm = document.getElementById('send-message-form');
     const sendMessageFormInput = document.getElementById('send-message-form-input');
     const sendMessageButton = document.getElementById('send-message-button');
-    // var awsCredentials = new AWS.CognitoIdentityCredentials({
-    //         IdentityPoolId: 'us-west-2:some-guid-for-identity-pool-id',
-    //         IdentityId: 'us-west-2:some-guid-for-identity-id',
-    //         Logins: {
-    //             'cognito-identity.amazonaws.com': tokenReturnedFromServer
-    //         }
-    //     });
 
 
     AWS.config.region = 'us-east-1';
